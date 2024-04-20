@@ -28,7 +28,3 @@ In order to test if the application works you can access:
 	http://localhost:5201
 
 You should see a message "Hello Wolrd" which means the application runs succesfully.
-=======
-testxxx
-
->>>>>>> 544d497baabb815d6c6ab03cf336428aba98c811
