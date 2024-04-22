@@ -1,6 +1,5 @@
 Hello in order to run this application you will have to follow the next steps.
 
-<<<<<<< HEAD
 - clone this repo.
 - change directory to the prerequisites folder.
 - Have packer installed on your current OS.
@@ -28,3 +27,20 @@ In order to test if the application works you can access:
 	http://localhost:5201
 
 You should see a message "Hello Wolrd" which means the application runs succesfully.
+
+Is not recommended to have your AWS access and secret key visible in plain format. Other way to run this is to create a new user on AWS with administrator access.
+This will generate your access key and secret access key in a .csv file after that you can install aws cli and run:
+
+	aws configure
+	
+Add your keys and you will be able to run the script without provide the keys in plain format.
+
+In order to provision the VM using terraform just change directory to webApp and run the following :
+
+	terraform init - it initiate the terraform
+	terraform fmt - it is formatting the terraform tf script in the correct syntax
+	terraform validate - it is validate the code
+	terraform plan - it shows you the changes which will be applied
+	terraform apply - provissioning the VM
+	
+You can acces your VM and test the application.
